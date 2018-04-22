@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ExJobb.unity
+- path: Assets/AppScenes/LocationBasedGame.unity
   isLoaded: 1
   isActive: 1
