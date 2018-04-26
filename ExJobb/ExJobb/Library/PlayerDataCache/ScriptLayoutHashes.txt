@@ -188,6 +188,7 @@ a45385d3c9df0a6caa6f202d510a87f9 Assembly-CSharp.dll:.OptionsGUI
 63ee4d254596e7e33706786578d0fdfc Assembly-CSharp.dll:.AR3DOFCameraManager
 7afbb4d1e228c936db08a975a5721d5d Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.SpawnInsideModifier
 0abbdc4938288c690efd9c810a09b02f Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.ModifierStackBase
+9dd43437a74d527a06bd1b4a3b0d00a1 Assembly-CSharp.dll:.TimerScript
 197981c001bff8a455daa01995a3fe5a Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.TagModifier
 7bf8b282e06673f1f43abd60f0289702 Assembly-CSharp.dll:Mapbox.Unity.Utilities.DebugTools.ScenesList
 16fe4b7466f84ecb1cd51172ea475a1c Assembly-CSharp.dll:Mapbox.Unity.Ar.Utilities.PlotRoute
