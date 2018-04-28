@@ -325,6 +325,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AppScripts\CanvasController.cs" />
+    <Compile Include="Assets\AppScripts\GameController.cs" />
+    <Compile Include="Assets\AppScripts\GPS.cs" />
+    <Compile Include="Assets\AppScripts\PhoneCamera.cs" />
+    <Compile Include="Assets\AppScripts\TimerScript.cs" />
+    <Compile Include="Assets\AppScripts\UpdateGpsText.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\ComputerVision\Scripts\ComputerVisionController.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\ComputerVision\Scripts\EdgeDetector.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\ComputerVision\Scripts\TextureReader.cs" />
@@ -677,10 +683,6 @@
     <Compile Include="Assets\MapboxAR\Unity\Ar\SimpleAutomaticSynchronizationContextBehaviour.cs" />
     <Compile Include="Assets\MapboxAR\Unity\Ar\SnapAlignmentStrategy.cs" />
     <Compile Include="Assets\MapboxAR\Unity\Ar\Utilities\PlotRoute.cs" />
-    <Compile Include="Assets\Scripts\GPS.cs" />
-    <Compile Include="Assets\Scripts\PhoneCamera.cs" />
-    <Compile Include="Assets\Scripts\TimerScript.cs" />
-    <Compile Include="Assets\Scripts\UpdateGpsText.cs" />
     <Compile Include="Assets\UnityARInterface\ARRemote\Scripts\ARRemoteDevice.cs" />
     <Compile Include="Assets\UnityARInterface\ARRemote\Scripts\ARRemoteEditor.cs" />
     <Compile Include="Assets\UnityARInterface\ARRemote\Scripts\ARRemoteEditorInterface.cs" />

@@ -46,6 +46,7 @@
 					else
 					{
 						_statusText.text = string.Format("{0}", currLoc.LatitudeLongitude);
+                        
 					}
 				}
 			}
