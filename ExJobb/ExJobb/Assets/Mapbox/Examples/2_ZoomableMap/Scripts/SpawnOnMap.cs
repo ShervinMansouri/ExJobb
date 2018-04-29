@@ -1,4 +1,4 @@
-﻿namespace Mapbox.Examples
+namespace Mapbox.Examples
 {
 	using UnityEngine;
 	using Mapbox.Utils;
@@ -40,6 +40,11 @@
 			}
 		}
 
+        public void DestroyGameObject()
+        {
+            if (_spawnedObjects[0])
+            Destroy(_spawnedObjects[0]);
+        }
 		private void Update()
 		{
 			int count = _spawnedObjects.Count;
@@ -47,8 +52,11 @@
 			{
 				var spawnedObject = _spawnedObjects[i];
 				var location = _locations[i];
-				spawnedObject.transform.localPosition = _map.GeoToWorldPosition(location, true);
-				spawnedObject.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
+                if (_spawnedObjects[0] != null)
+                {
+                    spawnedObject.transform.localPosition = _map.GeoToWorldPosition(location, true);
+				    spawnedObject.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
+                }
 			}
 		}
 	}
