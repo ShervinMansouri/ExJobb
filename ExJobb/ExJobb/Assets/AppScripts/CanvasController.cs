@@ -9,7 +9,7 @@ public class CanvasController : MonoBehaviour
     private AbstractLocationProvider m_locationProvider;
     
     public Canvas m_canvas;
-    public float m_minLatitude, m_maxLatitude, m_minLongitude, m_maxLongitude;
+    public double m_minLatitude, m_maxLatitude, m_minLongitude, m_maxLongitude;
 
     public Button button;
 
@@ -19,6 +19,11 @@ public class CanvasController : MonoBehaviour
 	void Start ()
     {
         m_canvas.enabled = false;
+
+        //if (null == m_locationProvider)
+        //{
+        //    m_locationProvider = LocationProviderFactory.Instance.DefaultLocationProvider as AbstractLocationProvider;
+        //}
         //Button btn = button.GetComponent<Button>();
         button.onClick.AddListener(TaskOnClick);
 
@@ -28,6 +33,7 @@ public class CanvasController : MonoBehaviour
     {
         canBePlayed = set;
     }
+
     void TaskOnClick()
     {
         canBePlayed = true;
@@ -37,10 +43,16 @@ public class CanvasController : MonoBehaviour
     // Update is called once per frame
     void Update ()
     {
-        Location currLoc = m_locationProvider.CurrentLocation;
+        //Location currLoc = m_locationProvider.CurrentLocation;
 
-        if (currLoc.LatitudeLongitude.x > m_minLatitude && currLoc.LatitudeLongitude.x < m_maxLatitude && currLoc.LatitudeLongitude.y > m_minLongitude && currLoc.LatitudeLongitude.y < m_maxLongitude && canBePlayed)
+        //if (currLoc.LatitudeLongitude.x > m_minLatitude && currLoc.LatitudeLongitude.x < m_maxLatitude && currLoc.LatitudeLongitude.y > m_minLongitude && currLoc.LatitudeLongitude.y < m_maxLongitude && canBePlayed)
+        //{
+
+        //    m_canvas.enabled = true;
+        //}
+        if (LocationStatus.latitude > m_minLatitude && LocationStatus.latitude < m_maxLatitude && LocationStatus.longitude > m_minLongitude && LocationStatus.longitude < m_maxLongitude && canBePlayed)
         {
+
             m_canvas.enabled = true;
         }
 

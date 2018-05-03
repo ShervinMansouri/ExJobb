@@ -1,5 +1,4 @@
-﻿namespace Mapbox.Examples
-{
+
 	using Mapbox.Unity.Location;
 	using Mapbox.Utils;
 	using System.Collections;
@@ -10,10 +9,14 @@
 	public class LocationStatus : MonoBehaviour
 	{
 
-		[SerializeField]
-		Text _statusText;
+	[SerializeField]
+	Text _statusText;
 
-		private AbstractLocationProvider _locationProvider = null;
+    [SerializeField]
+    public static double latitude, longitude;
+
+	private AbstractLocationProvider _locationProvider = null;
+
 		void Start()
 		{
 			if (null == _locationProvider)
@@ -46,6 +49,9 @@
 					else
 					{
 						_statusText.text = string.Format("{0}", currLoc.LatitudeLongitude);
+
+                        latitude = currLoc.LatitudeLongitude.x;
+                        longitude = currLoc.LatitudeLongitude.y;
                         
 					}
 				}
@@ -53,4 +59,4 @@
 
 		}
 	}
-}
+
