@@ -9,17 +9,24 @@
 	public class LocationStatus : MonoBehaviour
 	{
 
+    public static LocationStatus location_Instance { set; get; }
+
 	[SerializeField]
 	Text _statusText;
 
     [SerializeField]
-    public static double latitude, longitude;
+    public double latitude;
+    [SerializeField]
+    public double longitude;
 
-	private AbstractLocationProvider _locationProvider = null;
+    private AbstractLocationProvider _locationProvider = null;
 
 		void Start()
 		{
-			if (null == _locationProvider)
+        location_Instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        if (null == _locationProvider)
 			{
 				_locationProvider = LocationProviderFactory.Instance.DefaultLocationProvider as AbstractLocationProvider;
 			}

@@ -6,6 +6,7 @@ using Mapbox.Unity.Location;
 
 public class CanvasController : MonoBehaviour
 {
+    private LocationStatus ls;
     private AbstractLocationProvider m_locationProvider;
     
     public Canvas m_canvas;
@@ -50,7 +51,7 @@ public class CanvasController : MonoBehaviour
 
         //    m_canvas.enabled = true;
         //}
-        if (LocationStatus.latitude > m_minLatitude && LocationStatus.latitude < m_maxLatitude && LocationStatus.longitude > m_minLongitude && LocationStatus.longitude < m_maxLongitude && canBePlayed)
+        if (ls.latitude > m_minLatitude && ls.latitude < m_maxLatitude && ls.longitude > m_minLongitude && ls.longitude < m_maxLongitude && canBePlayed)
         {
 
             m_canvas.enabled = true;

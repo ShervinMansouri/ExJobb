@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TimerScript : MonoBehaviour
 {
-    Image healthBar;
+    public Image healthBar;
 
     public float maxTime = 10f;
     float timeLeft;
@@ -15,7 +15,7 @@ public class TimerScript : MonoBehaviour
 	void Start ()
     {
         lifeLostText.SetActive(false);
-        healthBar = GetComponent<Image>();
+        //healthBar = GetComponent<Image>();
         timeLeft = maxTime;
 		
 	}

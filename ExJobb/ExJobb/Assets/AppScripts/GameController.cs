@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public bool Quest1Finished = false;
-    public bool Quest2Finished = false;
-    public bool Quest3Finished = false;
-    public bool Quest4Finished = false;
-    public bool Quest5Finished = false;
-    public bool Quest6Finished = false;
-    public bool Quest7Finished = false;
+    public bool Quest1canBePlayed = false;
+    public bool Quest2canBePlayed = false;
+    public bool Quest3canBePlayed = false;
+    public bool Quest4canBePlayed = false;
+    public bool Quest5canBePlayed = false;
+    public bool Quest6canBePlayed = false;
+    public bool Quest7canBePlayed = false;
+
+
 
 
     // Use this for initialization

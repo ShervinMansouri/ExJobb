@@ -760,6 +760,7 @@
     <Compile Include="Assets\UnityARKitPlugin\UnityARKitPluginSettings.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\AppFonts\atlantis_the_lost_city\LICENSE REQUEST.txt" />
     <None Include="Assets\GoogleARCore\Examples\ComputerVision\Materials\AREdgeDetectionBackground.shader" />
     <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />
     <None Include="Assets\Mapbox\Core\Plugins\Android\UniAndroidPermission\AndroidManifest-uniRP.xml" />
