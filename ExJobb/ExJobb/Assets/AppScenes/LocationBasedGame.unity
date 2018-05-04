@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -148,12 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_canvas: {fileID: 191385}
-  m_minLatitude: 55.604862
-  m_maxLatitude: 55.605
-  m_minLongitude: 12.996465
-  m_maxLongitude: 12.996665
   button: {fileID: 2079040615}
-  canBePlayed: 0
 --- !u!1 &191384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,7 +1134,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.997284, y: -34.900757}
+  m_AnchoredPosition: {x: -1, y: -34.900757}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &320988199
@@ -1181,8 +1176,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1947514396}
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1322884529}
+        m_MethodName: setBoolQ1
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1192,8 +1187,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 510218852}
-        m_MethodName: setBool
+      - m_Target: {fileID: 1322884529}
+        m_MethodName: setBoolQ2
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1224,17 +1219,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1947514397}
-        m_MethodName: setBool
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -1475,12 +1459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_canvas: {fileID: 439061545}
-  m_minLatitude: 55.606255
-  m_maxLatitude: 55.606453
-  m_minLongitude: 13.00117
-  m_maxLongitude: 13.00134
   button: {fileID: 1682674249}
-  canBePlayed: 0
 --- !u!114 &439061543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2088,12 +2067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_canvas: {fileID: 510218853}
-  m_minLatitude: 55.605324
-  m_maxLatitude: 55.605526
-  m_minLongitude: 12.996465
-  m_maxLongitude: 12.996665
   button: {fileID: 320988199}
-  canBePlayed: 0
 --- !u!223 &510218853
 Canvas:
   m_ObjectHideFlags: 0
@@ -2332,8 +2306,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 657812272}
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1322884529}
+        m_MethodName: setBoolQ4
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2343,8 +2317,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 998321871}
-        m_MethodName: setBool
+      - m_Target: {fileID: 1322884529}
+        m_MethodName: setBoolQ5
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2375,17 +2349,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 657812271}
-        m_MethodName: setBool
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -2787,12 +2750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_canvas: {fileID: 657812273}
-  m_minLatitude: 55.604862
-  m_maxLatitude: 55.60511
-  m_minLongitude: 12.996465
-  m_maxLongitude: 12.996665
   button: {fileID: 1958464805}
-  canBePlayed: 0
 --- !u!1 &657812272
 GameObject:
   m_ObjectHideFlags: 0
@@ -3695,7 +3653,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &996040912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3888,12 +3846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_canvas: {fileID: 998321873}
-  m_minLatitude: 55.606094
-  m_maxLatitude: 55.606297
-  m_minLongitude: 13.000217
-  m_maxLongitude: 13.000417
   button: {fileID: 545236464}
-  canBePlayed: 0
 --- !u!1 &998321872
 GameObject:
   m_ObjectHideFlags: 0
@@ -4297,8 +4250,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1947514397}
-        m_MethodName: setBool
+      - m_Target: {fileID: 1322884529}
+        m_MethodName: setBoolQ1
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4436,8 +4389,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 439061541}
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1322884529}
+        m_MethodName: setBoolQ7
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4569,8 +4522,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 510218851}
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1322884529}
+        m_MethodName: setBoolQ2
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4580,8 +4533,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1631170942}
-        m_MethodName: setBool
+      - m_Target: {fileID: 1322884529}
+        m_MethodName: setBoolQ3
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5154,6 +5107,7 @@ GameObject:
   - component: {fileID: 1322884527}
   - component: {fileID: 1322884526}
   - component: {fileID: 1322884528}
+  - component: {fileID: 1322884529}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -5186,7 +5140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1974830192}
-  maxTime: 3600
+  maxTime: 20
   lifeLostText: {fileID: 2127416801}
 --- !u!114 &1322884527
 MonoBehaviour:
@@ -5200,8 +5154,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _statusText: {fileID: 1962332873}
-  latitude: 0
-  longitude: 0
 --- !u!82 &1322884528
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5213,7 +5165,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 380feb83112ee604db042217579c356e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.192
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5282,6 +5234,59 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &1322884529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1322884524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ba5bfac97063b4cb14f1c2d2e4c60f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Canvas1: {fileID: 1947514398}
+  Canvas2: {fileID: 510218853}
+  Canvas3: {fileID: 1631170944}
+  Canvas4: {fileID: 657812273}
+  Canvas5: {fileID: 998321873}
+  Canvas6: {fileID: 191385}
+  Canvas7: {fileID: 439061545}
+  Quest1canBePlayed: 0
+  Quest2canBePlayed: 0
+  Quest3canBePlayed: 0
+  Quest4canBePlayed: 0
+  Quest5canBePlayed: 0
+  Quest6canBePlayed: 0
+  Quest7canBePlayed: 0
+  minLatQ1: 55.60632
+  maxLatQ1: 55.606518
+  minLongQ1: 12.996336
+  maxLongQ1: 12.996536
+  minLatQ2: 55.605324
+  maxLatQ2: 55.605526
+  minLongQ2: 12.996465
+  maxLongQ2: 12.996665
+  minLatQ3: 55.604862
+  maxLatQ3: 55.605095
+  minLongQ3: 13.007449
+  maxLongQ3: 13.007649
+  minLatQ4: 55.604862
+  maxLatQ4: 55.60511
+  minLongQ4: 12.996465
+  maxLongQ4: 12.996665
+  minLatQ5: 55.606094
+  maxLatQ5: 55.606297
+  minLongQ5: 13.000217
+  maxLongQ5: 13.000417
+  minLatQ6: 55.604862
+  maxLatQ6: 55.605
+  minLongQ6: 12.996465
+  maxLongQ6: 12.996665
+  minLatQ7: 55.606255
+  maxLatQ7: 55.606453
+  minLongQ7: 13.00117
+  maxLongQ7: 13.00134
 --- !u!1 &1388071380
 GameObject:
   m_ObjectHideFlags: 0
@@ -5619,12 +5624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_canvas: {fileID: 1631170944}
-  m_minLatitude: 55.604862
-  m_maxLatitude: 55.605095
-  m_minLongitude: 13.007449
-  m_maxLongitude: 13.007649
   button: {fileID: 1198438040}
-  canBePlayed: 0
 --- !u!1 &1631170943
 GameObject:
   m_ObjectHideFlags: 0
@@ -5862,8 +5862,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 191384}
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1322884529}
+        m_MethodName: setBoolQ6
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5873,8 +5873,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 439061542}
-        m_MethodName: setBool
+      - m_Target: {fileID: 1322884529}
+        m_MethodName: setBoolQ7
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6650,12 +6650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_canvas: {fileID: 1947514398}
-  m_minLatitude: 55.60632
-  m_maxLatitude: 55.606518
-  m_minLongitude: 12.996336
-  m_maxLongitude: 12.996536
   button: {fileID: 1036950919}
-  canBePlayed: 0
 --- !u!223 &1947514398
 Canvas:
   m_ObjectHideFlags: 0
@@ -6894,8 +6889,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1631170943}
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1322884529}
+        m_MethodName: setBoolQ3
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6905,8 +6900,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 657812271}
-        m_MethodName: setBool
+      - m_Target: {fileID: 1322884529}
+        m_MethodName: setBoolQ4
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7350,8 +7345,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 998321872}
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1322884529}
+        m_MethodName: setBoolQ5
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7361,8 +7356,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 191383}
-        m_MethodName: setBool
+      - m_Target: {fileID: 1322884529}
+        m_MethodName: setBoolQ6
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7393,17 +7388,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 998321871}
-        m_MethodName: setBool
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -7657,7 +7641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.022058845, g: 0.002270763, b: 0.002270763, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7665,19 +7649,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_Font: {fileID: 12800000, guid: 218956a5c2a6e42d6a60afccf80b002b, type: 3}
+    m_FontSize: 19
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Game Over
+  m_Text: "Tiden \xE4r ute! Du lyckades inte f\xE5 din medicin i tid och du segnar
+    ner d\xF6d p\xE5 Malm\xF6s gator."
 --- !u!222 &2127416803
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7699,6 +7684,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13, y: 8.2}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 13, y: -56.839523}
+  m_SizeDelta: {x: 300, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
