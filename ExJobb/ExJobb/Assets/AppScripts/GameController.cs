@@ -1,17 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class GameController : MonoBehaviour
 {
-    public Canvas Canvas1;
-    public Canvas Canvas2;
-    public Canvas Canvas3;
-    public Canvas Canvas4;
-    public Canvas Canvas5;
-    public Canvas Canvas6;
-    public Canvas Canvas7;
     
+    public double lat;
+    public double lon;
+
+    public GameObject canvas1;
+    public GameObject canvas2;
+    public GameObject canvas3;
+    public GameObject canvas4;
+    public GameObject canvas5;
+    public GameObject canvas6;
+    public GameObject canvas7;
+
     public bool Quest1canBePlayed = false;
     public bool Quest2canBePlayed = false;
     public bool Quest3canBePlayed = false;
@@ -26,13 +31,8 @@ public class GameController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Canvas1.enabled = false;
-        Canvas2.enabled = false;
-        Canvas3.enabled = false;
-        Canvas4.enabled = false;
-        Canvas5.enabled = false;
-        Canvas6.enabled = false;
-        Canvas7.enabled = false;
+        
+
 
     }
 
@@ -66,37 +66,49 @@ public class GameController : MonoBehaviour
         Quest7canBePlayed = set;
     }
 
+    
     // Update is called once per frame
     void Update ()
     {
-        if (LocationStatus.latitude > minLatQ1 && LocationStatus.latitude < maxLatQ1 && LocationStatus.longitude > minLongQ1 && LocationStatus.longitude < maxLongQ1 && Quest1canBePlayed)
+        lat = LocationStatus.latitude;
+        lon = LocationStatus.longitude;
+
+        if (lat > minLatQ1 && lat < maxLatQ1 && lon > minLongQ1 && lon < maxLongQ1 && Quest1canBePlayed == true)
         {
-            Canvas1.enabled = true;
+            canvas1.gameObject.SetActive(true);
+            Quest1canBePlayed = false;
+            
         }
 
-        if (LocationStatus.latitude > minLatQ2 && LocationStatus.latitude < maxLatQ2 && LocationStatus.longitude > minLongQ2 && LocationStatus.longitude < maxLongQ2 && Quest2canBePlayed)
+        if (lat > minLatQ2 && lat < maxLatQ2 && lon > minLongQ2 && lon < maxLongQ2 && Quest2canBePlayed)
         {
-            Canvas2.enabled = true;
+            canvas2.gameObject.SetActive(true);
+            Quest2canBePlayed = false;
         }
-        if (LocationStatus.latitude > minLatQ3 && LocationStatus.latitude < maxLatQ3 && LocationStatus.longitude > minLongQ3 && LocationStatus.longitude < maxLongQ3 && Quest3canBePlayed)
+        if (lat > minLatQ3 && lat < maxLatQ3 && lon > minLongQ3 && lon < maxLongQ3 && Quest3canBePlayed)
         {
-            Canvas3.enabled = true;
+            canvas3.gameObject.SetActive(true);
+            Quest3canBePlayed = false;
         }
-        if (LocationStatus.latitude > minLatQ4 && LocationStatus.latitude < maxLatQ4 && LocationStatus.longitude > minLongQ4 && LocationStatus.longitude < maxLongQ4 && Quest4canBePlayed)
+        if (lat > minLatQ4 && lat < maxLatQ4 && lon > minLongQ4 && lon < maxLongQ4 && Quest4canBePlayed)
         {
-            Canvas4.enabled = true;
+            canvas4.gameObject.SetActive(true);
+            Quest4canBePlayed = false;
         }
-        if (LocationStatus.latitude > minLatQ5 && LocationStatus.latitude < maxLatQ5 && LocationStatus.longitude > minLongQ5 && LocationStatus.longitude < maxLongQ5 && Quest5canBePlayed)
+        if (lat > minLatQ5 && lat < maxLatQ5 && lon > minLongQ5 && lon < maxLongQ5 && Quest5canBePlayed)
         {
-            Canvas5.enabled = true;
+            canvas5.gameObject.SetActive(true);
+            Quest5canBePlayed = false;
         }
-        if (LocationStatus.latitude > minLatQ6 && LocationStatus.latitude < maxLatQ6 && LocationStatus.longitude > minLongQ6 && LocationStatus.longitude < maxLongQ6 && Quest6canBePlayed)
+        if (lat > minLatQ6 && lat < maxLatQ6 && lon > minLongQ6 && lon < maxLongQ6 && Quest6canBePlayed)
         {
-            Canvas6.enabled = true;
+            canvas6.gameObject.SetActive(true);
+            Quest6canBePlayed = false;
         }
         if (Quest7canBePlayed)
         {
-            Canvas7.enabled = true;
+            canvas7.gameObject.SetActive(true);
+            Quest7canBePlayed = false;
         }
     }
 }

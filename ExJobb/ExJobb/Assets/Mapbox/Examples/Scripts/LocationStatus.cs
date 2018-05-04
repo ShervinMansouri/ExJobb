@@ -15,9 +15,9 @@
 	Text _statusText;
 
     [SerializeField]
-    public static double latitude;
+    public static double latitude { get; set; }
     [SerializeField]
-    public static double longitude;
+    public static double longitude { get; set; }
 
     private AbstractLocationProvider _locationProvider = null;
 

@@ -6,10 +6,10 @@ using Mapbox.Unity.Location;
 
 public class CanvasController : MonoBehaviour
 {
-    private LocationStatus ls;
-    private AbstractLocationProvider m_locationProvider;
+    //private LocationStatus ls;
+    //private AbstractLocationProvider m_locationProvider;
     
-    public Canvas m_canvas;
+    //public Canvas m_canvas;
     //public double m_minLatitude, m_maxLatitude, m_minLongitude, m_maxLongitude;
 
     public Button button;

@@ -147,7 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50fa26acfdd0f9c4784c3bf6e0971a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_canvas: {fileID: 191385}
   button: {fileID: 2079040615}
 --- !u!1 &191384
 GameObject:
@@ -835,7 +834,7 @@ RectTransform:
   m_LocalScale: {x: 1.3468962, y: 1.3468963, z: 1.3468963}
   m_Children: []
   m_Father: {fileID: 996040915}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1176,8 +1175,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1322884529}
-        m_MethodName: setBoolQ1
+      - m_Target: {fileID: 1947514396}
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1458,7 +1457,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50fa26acfdd0f9c4784c3bf6e0971a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_canvas: {fileID: 439061545}
   button: {fileID: 1682674249}
 --- !u!114 &439061543
 MonoBehaviour:
@@ -2066,7 +2064,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50fa26acfdd0f9c4784c3bf6e0971a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_canvas: {fileID: 510218853}
   button: {fileID: 320988199}
 --- !u!223 &510218853
 Canvas:
@@ -2306,8 +2303,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1322884529}
-        m_MethodName: setBoolQ4
+      - m_Target: {fileID: 657812272}
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2749,7 +2746,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50fa26acfdd0f9c4784c3bf6e0971a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_canvas: {fileID: 657812273}
   button: {fileID: 1958464805}
 --- !u!1 &657812272
 GameObject:
@@ -3721,6 +3717,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1889639603}
   - {fileID: 236727196}
   - {fileID: 2082700540}
   m_Father: {fileID: 0}
@@ -3845,7 +3842,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50fa26acfdd0f9c4784c3bf6e0971a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_canvas: {fileID: 998321873}
   button: {fileID: 545236464}
 --- !u!1 &998321872
 GameObject:
@@ -4389,8 +4385,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1322884529}
-        m_MethodName: setBoolQ7
+      - m_Target: {fileID: 439061541}
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4522,8 +4518,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1322884529}
-        m_MethodName: setBoolQ2
+      - m_Target: {fileID: 510218851}
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5104,10 +5100,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1322884525}
+  - component: {fileID: 1322884529}
   - component: {fileID: 1322884527}
   - component: {fileID: 1322884526}
   - component: {fileID: 1322884528}
-  - component: {fileID: 1322884529}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -5140,7 +5136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1974830192}
-  maxTime: 20
+  maxTime: 3600
   lifeLostText: {fileID: 2127416801}
 --- !u!114 &1322884527
 MonoBehaviour:
@@ -5245,13 +5241,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29ba5bfac97063b4cb14f1c2d2e4c60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canvas1: {fileID: 1947514398}
-  Canvas2: {fileID: 510218853}
-  Canvas3: {fileID: 1631170944}
-  Canvas4: {fileID: 657812273}
-  Canvas5: {fileID: 998321873}
-  Canvas6: {fileID: 191385}
-  Canvas7: {fileID: 439061545}
+  lat: 0
+  lon: 0
+  canvas1: {fileID: 1947514396}
+  canvas2: {fileID: 510218851}
+  canvas3: {fileID: 1631170943}
+  canvas4: {fileID: 657812272}
+  canvas5: {fileID: 998321872}
+  canvas6: {fileID: 191384}
+  canvas7: {fileID: 439061541}
   Quest1canBePlayed: 0
   Quest2canBePlayed: 0
   Quest3canBePlayed: 0
@@ -5259,10 +5257,10 @@ MonoBehaviour:
   Quest5canBePlayed: 0
   Quest6canBePlayed: 0
   Quest7canBePlayed: 0
-  minLatQ1: 55.60632
-  maxLatQ1: 55.606518
-  minLongQ1: 12.996336
-  maxLongQ1: 12.996536
+  minLatQ1: 30
+  maxLatQ1: 40
+  minLongQ1: -130
+  maxLongQ1: -120
   minLatQ2: 55.605324
   maxLatQ2: 55.605526
   minLongQ2: 12.996465
@@ -5623,7 +5621,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50fa26acfdd0f9c4784c3bf6e0971a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_canvas: {fileID: 1631170944}
   button: {fileID: 1198438040}
 --- !u!1 &1631170943
 GameObject:
@@ -5862,8 +5859,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1322884529}
-        m_MethodName: setBoolQ6
+      - m_Target: {fileID: 191384}
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6401,11 +6398,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1889639600}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -274.9537, y: -44.62502, z: 0}
-  m_LocalScale: {x: 0.28404307, y: 0.23363885, z: 0.38850793}
+  m_LocalPosition: {x: -907.84546, y: -244.08963, z: 0}
+  m_LocalScale: {x: 1.2620614, y: 1.2779597, z: 1.2779597}
   m_Children: []
-  m_Father: {fileID: 2082700540}
-  m_RootOrder: 1
+  m_Father: {fileID: 996040915}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1898760415
 GameObject:
@@ -6649,7 +6646,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50fa26acfdd0f9c4784c3bf6e0971a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_canvas: {fileID: 1947514398}
   button: {fileID: 1036950919}
 --- !u!223 &1947514398
 Canvas:
@@ -6889,8 +6885,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1322884529}
-        m_MethodName: setBoolQ3
+      - m_Target: {fileID: 1631170943}
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7345,8 +7341,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1322884529}
-        m_MethodName: setBoolQ5
+      - m_Target: {fileID: 998321872}
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7452,9 +7448,8 @@ RectTransform:
   m_LocalScale: {x: 4.443204, y: 5.469808, z: 3.2894044}
   m_Children:
   - {fileID: 2101718154}
-  - {fileID: 1889639603}
   m_Father: {fileID: 996040915}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
