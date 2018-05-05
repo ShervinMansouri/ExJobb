@@ -5,22 +5,25 @@
 	using UnityEngine;
 	using Mapbox.Unity.Location;
 
-	public class TouchCamera : MonoBehaviour
-	{
-		[SerializeField]
-		Camera _camera;
+    public class TouchCamera : MonoBehaviour
+    {
+        [SerializeField]
+        Camera _camera;
 
-		[SerializeField]
-		TransformLocationProvider _locationProvider;
+        [SerializeField]
+        TransformLocationProvider _locationProvider;
 
-		Vector2?[] oldTouchPositions = { null, null };
+        Vector2?[] oldTouchPositions = { null, null };
 
-		Vector2 oldTouchVector;
-		Vector3 _delta;
-		float oldTouchDistance;
-		Vector3 _origin;
-
-		bool _wasTouching;
+        Vector2 oldTouchVector;
+        Vector3 _delta;
+        float oldTouchDistance;
+        Vector3 _origin;
+        int maxZoom = 30;
+        int minZoom = 145;
+        Vector3 resetCameraMax = new Vector3 (13, 33, 99);
+        Vector3 resetCameraMin = new Vector3(29, 145, -50);
+        bool _wasTouching;
 
 		bool _shouldDrag;
 
@@ -50,18 +53,37 @@
 				}
 				else
 				{
-					Vector3 newTouchPosition = Input.GetTouch(0).position;
-					newTouchPosition.z = _camera.transform.localPosition.y;
-					_delta = _camera.ScreenToWorldPoint(newTouchPosition) - _camera.transform.localPosition;
-					if (_shouldDrag == false)
-					{
-						_shouldDrag = true;
-						_origin = _camera.ScreenToWorldPoint(newTouchPosition);
-					}
+                    if (_camera.transform.position.y > maxZoom || _camera.transform.position.y < minZoom)
+                    {
+                        //_camera.transform.position.y = 35;
+                        //_camera.transform.localPosition = resetCameraY;
+                        
+                        Vector3 newTouchPosition = Input.GetTouch(0).position;
+                        newTouchPosition.z = _camera.transform.localPosition.y;
 
-					oldTouchPositions[0] = newTouchPosition;
-					_camera.transform.localPosition = _origin - _delta;
-				}
+                        _delta = _camera.ScreenToWorldPoint(newTouchPosition) - _camera.transform.localPosition;
+
+                        if (_shouldDrag == false)
+                        {
+                            _shouldDrag = true;
+                            _origin = _camera.ScreenToWorldPoint(newTouchPosition);
+                        }
+
+                        oldTouchPositions[0] = newTouchPosition;
+                        _camera.transform.localPosition = _origin - _delta;
+                    }
+                    if(_camera.transform.position.y < maxZoom)
+                    {
+                        _camera.transform.localPosition = resetCameraMax;
+
+                    }
+                    
+                    if(_camera.transform.position.y > minZoom)
+                    {
+                        _camera.transform.localPosition = resetCameraMin;
+
+                    }
+                }
 			}
 			else
 			{

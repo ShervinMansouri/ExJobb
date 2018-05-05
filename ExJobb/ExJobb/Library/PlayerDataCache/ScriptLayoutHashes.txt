@@ -188,7 +188,7 @@ a45385d3c9df0a6caa6f202d510a87f9 Assembly-CSharp.dll:.OptionsGUI
 63ee4d254596e7e33706786578d0fdfc Assembly-CSharp.dll:.AR3DOFCameraManager
 7afbb4d1e228c936db08a975a5721d5d Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.SpawnInsideModifier
 0abbdc4938288c690efd9c810a09b02f Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.ModifierStackBase
-9dd43437a74d527a06bd1b4a3b0d00a1 Assembly-CSharp.dll:.TimerScript
+1e98d90ade8bac36dd7ec60e34b85ad5 Assembly-CSharp.dll:.TimerScript
 197981c001bff8a455daa01995a3fe5a Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.TagModifier
 7bf8b282e06673f1f43abd60f0289702 Assembly-CSharp.dll:Mapbox.Unity.Utilities.DebugTools.ScenesList
 16fe4b7466f84ecb1cd51172ea475a1c Assembly-CSharp.dll:Mapbox.Unity.Ar.Utilities.PlotRoute
@@ -208,7 +208,7 @@ e31ef279e8d06182f0817ebd899ff54c Assembly-CSharp.dll:.UnityARUserAnchorExample
 38bf2dc37578e2b93cce72d1d6e2f915 Assembly-CSharp.dll:Mapbox.Unity.Utilities.OpenUrlOnButtonClick
 142b07798848d35fb1776ce00de69b4c Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Factories.TerrainFactory
 54484036f2686625f3d5f5b06557fe49 Assembly-CSharp.dll:.PlaceOnPlane
-51752d83846c6a67671a67a7e1bb8b9c Assembly-CSharp.dll:Mapbox.Examples.LocationStatus
+51752d83846c6a67671a67a7e1bb8b9c Assembly-CSharp.dll:.LocationStatus
 e2100106453ffa0f0485d9fa51b3b009 Assembly-CSharp.dll:Mapbox.Examples.ReloadMap
 16ae33ee0fbf8362ac99a6fb3e017cb6 Assembly-CSharp.dll:UnityARInterface.ARFocusSquare
 32e8fe00b63ed946490b898f6024a2f2 Facebook.Unity.Settings.dll:Facebook.Unity.Settings.FacebookSettings
@@ -244,6 +244,7 @@ e7fcf7b90f47d05b0aafa98e81d856d8 Assembly-CSharp.dll:UnityEngine.XR.iOS.ARKitRem
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Mapbox.Examples.MakiHelper
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 3c90dd8e86e1a1600e4fd969eddaeea2 Assembly-CSharp.dll:GoogleARCore.ARCoreSessionConfig
+8b7e277e229d91ae87ee1a9f46f777d4 Assembly-CSharp.dll:.GameController
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 450b98aded8286c8aae5a80d53cb3d26 Assembly-CSharp.dll:UnityARInterface.ARPlaneVisualizer
 90e46cd6ce69680148f6d6aae2ed57b4 Assembly-CSharp.dll:Mapbox.Unity.Utilities.Console
@@ -265,6 +266,7 @@ aa4813d9e2a247785fb223838ed21c87 Assembly-CSharp.dll:Mapbox.Examples.Playground.
 fc42df82d6d63a018a16626746318ca6 Assembly-CSharp.dll:Mapbox.Unity.Utilities.DebugTools.SceneData
 b15500bf1b76bbde5922a3b83fc39627 Assembly-CSharp.dll:Mapbox.Examples.Playground.ForwardGeocoderExample
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+8b9f05e49e19b6f3202c3e211aaeb09b Assembly-CSharp.dll:.CanvasController
 41e9f79146e6776b2f1e11789e3bfbba Assembly-CSharp.dll:Mapbox.Examples.CameraBillboard
 54fe357e020c464dbb46e57e18af2df8 Assembly-CSharp.dll:Mapbox.Unity.Ar.LerpAlignmentStrategy
 6ff378b4630d84f63e95fc3d2b45eaf7 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.TextureModifier
