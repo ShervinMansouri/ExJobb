@@ -6,9 +6,9 @@
 
 	public class ImmediatePositionWithLocationProvider : MonoBehaviour
 	{
-		//[SerializeField]
-		//private UnifiedMap _map;
-
+        //[SerializeField]
+        //private UnifiedMap _map;
+        public static Vector3 staticPos { get; set; }
 		bool _isInitialized;
 
 		ILocationProvider _locationProvider;
@@ -38,7 +38,16 @@
 			{
 				var map = LocationProviderFactory.Instance.mapManager;
 				transform.localPosition = map.GeoToWorldPosition(LocationProvider.CurrentLocation.LatitudeLongitude);
+
+                //staticPos = transform.;
 			}
+        
 		}
+
+      //public static Vector3 GetPos()
+      //  {
+
+      //      return transform.localPosition;
+      //  }
 	}
 }

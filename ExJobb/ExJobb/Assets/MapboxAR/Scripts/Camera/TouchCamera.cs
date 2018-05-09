@@ -29,7 +29,10 @@
 
 		void Update()
 		{
-			if (Input.touchCount == 0)
+            resetCameraMax = new Vector3(transform.position.x, 33, transform.position.z);
+            resetCameraMin = new Vector3(transform.position.x, 145, transform.position.z);
+
+            if (Input.touchCount == 0)
 			{
 				oldTouchPositions[0] = null;
 				oldTouchPositions[1] = null;
@@ -39,6 +42,7 @@
 					if (_locationProvider != null)
 					{
 						_locationProvider.SendLocationEvent();
+                        
 					}
 					_wasTouching = false;
 				}
