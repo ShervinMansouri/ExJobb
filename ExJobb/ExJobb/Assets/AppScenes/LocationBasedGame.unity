@@ -405,7 +405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 8030623}
-  _locationProvider: {fileID: 708794323}
+  _locationProvider: {fileID: 0}
 --- !u!114 &8030626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3001,12 +3001,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &708794323 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114549904832999176, guid: 35ce2bb4caba9434db5e656796b632b1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1312888759}
-  m_Script: {fileID: 11500000, guid: a034c4eeb3293418aab101c1895844a4, type: 3}
 --- !u!1 &710030706 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1113662247788864, guid: 13911721a3a3baa4ab9c48e749ec3465,
