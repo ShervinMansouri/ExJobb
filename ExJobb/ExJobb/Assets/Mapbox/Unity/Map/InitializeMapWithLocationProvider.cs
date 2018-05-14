@@ -23,5 +23,9 @@
 			_locationProvider.OnLocationUpdated -= LocationProvider_OnLocationUpdated;
 			_map.Initialize(location.LatitudeLongitude, _map.AbsoluteZoom);
 		}
+        public void CenterMap()
+        {
+
+        }
 	}
 }

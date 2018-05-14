@@ -211,6 +211,7 @@ e31ef279e8d06182f0817ebd899ff54c Assembly-CSharp.dll:.UnityARUserAnchorExample
 51752d83846c6a67671a67a7e1bb8b9c Assembly-CSharp.dll:.LocationStatus
 e2100106453ffa0f0485d9fa51b3b009 Assembly-CSharp.dll:Mapbox.Examples.ReloadMap
 16ae33ee0fbf8362ac99a6fb3e017cb6 Assembly-CSharp.dll:UnityARInterface.ARFocusSquare
+41e9f79146e6776b2f1e11789e3bfbba Assembly-CSharp.dll:.ResetCamera
 32e8fe00b63ed946490b898f6024a2f2 Facebook.Unity.Settings.dll:Facebook.Unity.Settings.FacebookSettings
 142b07798848d35fb1776ce00de69b4c Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Factories.FlatTerrainFactory
 3241ebe8b0922d467d765be7f37fd1ca Assembly-CSharp.dll:.UnityARKitPluginSettings
@@ -270,7 +271,7 @@ b15500bf1b76bbde5922a3b83fc39627 Assembly-CSharp.dll:Mapbox.Examples.Playground.
 41e9f79146e6776b2f1e11789e3bfbba Assembly-CSharp.dll:Mapbox.Examples.CameraBillboard
 54fe357e020c464dbb46e57e18af2df8 Assembly-CSharp.dll:Mapbox.Unity.Ar.LerpAlignmentStrategy
 6ff378b4630d84f63e95fc3d2b45eaf7 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.TextureModifier
-08df8693c8d41d8a6e3012724fbcf3f1 Assembly-CSharp.dll:Mapbox.Examples.TouchCamera
+08df8693c8d41d8a6e3012724fbcf3f1 Assembly-CSharp.dll:.TouchCamera
 c764112e28455a924fb49f286444f5dc Assembly-CSharp.dll:Mapbox.Unity.Location.EditorLocationProvider
 ec09b42957318a0f1c044fc67426c28a Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.MaterialModifier
 a03bf117f619d8739fe5c6d73c57c4c3 Assembly-CSharp.dll:Mapbox.Unity.Location.LocationArrayEditorLocationProvider

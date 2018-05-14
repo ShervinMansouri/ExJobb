@@ -1,10 +1,10 @@
-﻿namespace Mapbox.Examples
-{
+﻿//namespace Mapbox.Examples
+//{
 	// Just add this script to your camera. It doesn't need any configuration.
 
 	using UnityEngine;
 	using Mapbox.Unity.Location;
-
+    using UnityEngine.UI;
     public class TouchCamera : MonoBehaviour
     {
         [SerializeField]
@@ -23,11 +23,17 @@
         int minZoom = 145;
         Vector3 resetCameraMax = new Vector3 (13, 33, 99);
         Vector3 resetCameraMin = new Vector3(29, 145, -50);
+        Vector3 resetCamera = new Vector3(0, 53, -20);
+
         bool _wasTouching;
 
 		bool _shouldDrag;
-
-		void Update()
+        public void CenterCamera()
+        {
+        _camera.transform.position = resetCamera;
+        _shouldDrag = false;
+        }
+        void Update()
 		{
             resetCameraMax = new Vector3(transform.position.x, 33, transform.position.z);
             resetCameraMin = new Vector3(transform.position.x, 145, transform.position.z);
@@ -115,4 +121,4 @@
 			}
 		}
 	}
-}
+//}
