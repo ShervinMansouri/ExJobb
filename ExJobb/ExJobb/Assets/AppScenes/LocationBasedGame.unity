@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -387,7 +387,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 8030620}
   m_LocalRotation: {x: 0.5735764, y: 0, z: 0, w: 0.8191521}
-  m_LocalPosition: {x: 0, y: 53, z: -20}
+  m_LocalPosition: {x: 0, y: 100, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -810,11 +810,11 @@ Prefab:
       objectReference: {fileID: 2100000, guid: cc1ed204278de214fb1666ba316127c5, type: 2}
     - target: {fileID: 400000, guid: 0c92348477c4ef34ebdc9bfe8fec89de, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c92348477c4ef34ebdc9bfe8fec89de, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0c92348477c4ef34ebdc9bfe8fec89de, type: 3}
       propertyPath: m_IsActive
@@ -822,26 +822,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c92348477c4ef34ebdc9bfe8fec89de, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.6
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c92348477c4ef34ebdc9bfe8fec89de, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &188547020
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 188547019}
-  m_GameObject: {fileID: 1894381256}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1061757790}
-  - {fileID: 1061757793}
-  m_Father: {fileID: 1388071381}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &206816122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1776,7 +1761,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Jaha, du \xE4r sjuk? Jag skulle kunna hj\xE4lpa dig om du f\xF6rst hj\xE4lper
     mig med en liten sak...\n\nG\xE5 till Mats Smeds p\xE5 Rundelsgatan med den h\xE4r
-    struten. Kasta den framf\xF6r d\xF6rren i tusen dj\xE4vlars namn, och synda dig
+    struten. Kasta den framf\xF6r d\xF6rren i tusen dj\xE4vlars namn, och skynda dig
     tillbaka! \n\n"
 --- !u!222 &441758050
 CanvasRenderer:
@@ -2489,21 +2474,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 545236462}
---- !u!1 &570830320
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 188547019}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1061757793}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &575221453
 GameObject:
   m_ObjectHideFlags: 0
@@ -2922,7 +2892,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 657284820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 40.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1047357150}
@@ -2931,7 +2901,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 273, y: -79}
+  m_AnchoredPosition: {x: -1.5, y: -108.9}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &657284822
@@ -3025,7 +2995,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 657284820}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b3819e803c54ff48911c75075535422, type: 3}
   m_Name: 
@@ -4351,7 +4321,7 @@ RectTransform:
   m_GameObject: {fileID: 1006519269}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.7568974, y: 1.7568966, z: 1.7568966}
   m_Children:
   - {fileID: 1974830191}
   m_Father: {fileID: 1220223451}
@@ -4359,7 +4329,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 105, y: 73.8}
+  m_AnchoredPosition: {x: 168.27777, y: 124.81392}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1006519271
@@ -4710,47 +4680,14 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1047357149}
---- !u!1 &1061757789
+--- !u!1 &1061757789 stripped
 GameObject:
-  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 0c92348477c4ef34ebdc9bfe8fec89de, type: 3}
   m_PrefabInternal: {fileID: 188547019}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1061757790}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1061757790
+--- !u!4 &1061757793 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 188547019}
-  m_GameObject: {fileID: 1061757789}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 188547020}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1061757793
-Transform:
-  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: 0c92348477c4ef34ebdc9bfe8fec89de, type: 3}
   m_PrefabInternal: {fileID: 188547019}
-  m_GameObject: {fileID: 570830320}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 188547020}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1097789541 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114586318175614768, guid: 35ce2bb4caba9434db5e656796b632b1,
@@ -5541,15 +5478,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4829887955011164, guid: 35ce2bb4caba9434db5e656796b632b1, type: 2}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4829887955011164, guid: 35ce2bb4caba9434db5e656796b632b1, type: 2}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4829887955011164, guid: 35ce2bb4caba9434db5e656796b632b1, type: 2}
       propertyPath: m_LocalScale.z
-      value: 4
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114276132085450664, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 2}
+      propertyPath: _imagery._layerProperty.rasterOptions.useCompression
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35ce2bb4caba9434db5e656796b632b1, type: 2}
@@ -5598,7 +5540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1974830192}
-  maxTime: 3600
+  maxTime: 3300
   lifeLostText: {fileID: 2127416801}
 --- !u!114 &1322884527
 MonoBehaviour:
@@ -5774,7 +5716,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 710030710}
-  - {fileID: 188547020}
+  - {fileID: 1061757793}
   - {fileID: 1729803999}
   - {fileID: 635795292}
   m_Father: {fileID: 0}
@@ -6869,21 +6811,6 @@ Transform:
   m_Father: {fileID: 996040915}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1894381256
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 188547019}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 188547020}
-  m_Layer: 0
-  m_Name: Missing Prefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1898760415
 GameObject:
   m_ObjectHideFlags: 0
