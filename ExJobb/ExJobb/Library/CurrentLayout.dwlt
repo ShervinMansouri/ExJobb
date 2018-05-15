@@ -393,14 +393,14 @@ MonoBehaviour:
     height: 350
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 2278.697968071111
+  lastFramingTime: 652.4289275935495
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -48.13039, y: 27.14148, z: -47.579815}
+    m_Target: {x: -75.26462, y: 47.856503, z: -10.383669}
     speed: 2
-    m_Value: {x: -48.13039, y: 27.14148, z: -47.579815}
+    m_Value: {x: -75.26462, y: 47.856503, z: -10.383669}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -424,13 +424,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.32291645, y: -0.004804907, z: 0.001673344, w: -0.94642407}
+    m_Target: {x: -0.5853951, y: -0.02841546, z: 0.020571642, w: -0.8099926}
     speed: 2
-    m_Value: {x: -0.32291645, y: -0.004804907, z: 0.001673344, w: -0.94642407}
+    m_Value: {x: -0.58539337, y: -0.028415376, z: 0.02057158, w: -0.8099902}
   m_Size:
-    m_Target: 80.77375
+    m_Target: 134.70442
     speed: 2
-    m_Value: 80.77375
+    m_Value: 134.70442
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -854,18 +854,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/AppScripts
+    - Assets/MapboxAR/Scripts/Camera
   m_ViewMode: 1
   m_StartGridSize: 65
   m_LastFolders:
-  - Assets/AppScripts
+  - Assets/MapboxAR/Scripts/Camera
   m_LastFoldersGridSize: 65
   m_LastProjectPath: E:\UnityLocal\ExJobb\ExJobb\ExJobb
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: f62e0000
-    m_LastClickedID: 12022
+    scrollPos: {x: 0, y: 573}
+    m_SelectedIDs: 24320000
+    m_LastClickedID: 12836
     m_ExpandedIDs: 00000000302e000006300000543000006430000074300000843300007c3400000c3600000a3700005c37000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -946,7 +946,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 400}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 65
   m_DirectoriesAreaWidth: 110
 --- !u!114 &21
@@ -976,7 +976,7 @@ MonoBehaviour:
     width: 309
     height: 806
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ScrollPosition: {x: 0, y: 18.955078}
+  m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: -160

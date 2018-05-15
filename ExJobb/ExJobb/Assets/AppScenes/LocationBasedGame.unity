@@ -450,8 +450,8 @@ MonoBehaviour:
   _map: {fileID: 1832734794}
   _locationStrings:
   - 55.604964, 12.996565
-  _spawnScale: 2
-  _markerPrefab: {fileID: 1061757789}
+  _spawnScale: 4
+  _markerPrefab: {fileID: 710030706}
 --- !u!224 &38884758
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2784,7 +2784,7 @@ MonoBehaviour:
   _map: {fileID: 1832734794}
   _locationStrings:
   - 55.605425, 13.007549
-  _spawnScale: 2
+  _spawnScale: 3
   _markerPrefab: {fileID: 1061757789}
 --- !u!224 &638773101
 RectTransform:
@@ -3347,8 +3347,8 @@ MonoBehaviour:
   _map: {fileID: 1832734794}
   _locationStrings:
   - 55.604964, 12.996565
-  _spawnScale: 2
-  _markerPrefab: {fileID: 1061757789}
+  _spawnScale: 4
+  _markerPrefab: {fileID: 710030706}
 --- !u!224 &778566602
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3546,7 +3546,7 @@ MonoBehaviour:
   _map: {fileID: 1832734794}
   _locationStrings:
   - 55.606419, 12.996436
-  _spawnScale: 2
+  _spawnScale: 3
   _markerPrefab: {fileID: 1061757789}
 --- !u!224 &788176273
 RectTransform:
@@ -3754,8 +3754,8 @@ MonoBehaviour:
   _map: {fileID: 1832734794}
   _locationStrings:
   - 55.606738, 13.003400
-  _spawnScale: 2
-  _markerPrefab: {fileID: 1061757789}
+  _spawnScale: 4
+  _markerPrefab: {fileID: 710030706}
 --- !u!224 &892717214
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5493,6 +5493,21 @@ Prefab:
       propertyPath: _imagery._layerProperty.rasterOptions.useCompression
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114276132085450664, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 2}
+      propertyPath: _terrain._layerProperty.sourceType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114276132085450664, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 2}
+      propertyPath: _terrain._layerProperty.sourceOptions.layerSource.Id
+      value: mapbox.terrain-rgb
+      objectReference: {fileID: 0}
+    - target: {fileID: 114276132085450664, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 2}
+      propertyPath: _imagery._layerProperty.rasterOptions.useRetina
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35ce2bb4caba9434db5e656796b632b1, type: 2}
   m_IsPrefabParent: 0
@@ -5831,7 +5846,7 @@ MonoBehaviour:
   _map: {fileID: 1832734794}
   _locationStrings:
   - '55.606196, 13.000317 '
-  _spawnScale: 2
+  _spawnScale: 3
   _markerPrefab: {fileID: 1061757789}
 --- !u!224 &1454036727
 RectTransform:
@@ -6387,7 +6402,7 @@ MonoBehaviour:
   _locationStrings:
   - 55.606353, 13.001267
   _spawnScale: 2
-  _markerPrefab: {fileID: 1061757789}
+  _markerPrefab: {fileID: 710030706}
 --- !u!224 &1683942750
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6447,7 +6462,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1113662247788864, guid: 13911721a3a3baa4ab9c48e749ec3465, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1113662247788864, guid: 13911721a3a3baa4ab9c48e749ec3465, type: 2}
       propertyPath: m_Name

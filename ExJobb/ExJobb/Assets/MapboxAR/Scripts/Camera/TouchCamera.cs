@@ -23,7 +23,7 @@
         int minZoom = 145;
         Vector3 resetCameraMax = new Vector3 (13, 33, 99);
         Vector3 resetCameraMin = new Vector3(29, 145, -50);
-        Vector3 resetCamera = new Vector3(0, 53, -20);
+        Vector3 resetCamera = new Vector3(0, 100, -20);
 
         bool _wasTouching;
 
